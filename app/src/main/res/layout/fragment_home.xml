@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/image_location"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="77dp"
+        android:src="@drawable/location2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter your location"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_location"
+        app:layout_constraintStart_toStartOf="@+id/image_location"
+        app:layout_constraintTop_toBottomOf="@+id/image_location" />
+
+    <Button
+        android:id="@+id/btn_fertilization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Fertilization "
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:background="@drawable/login_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_irrigation"
+        app:layout_constraintTop_toTopOf="@+id/btn_irrigation" />
+
+    <Button
+        android:id="@+id/btn_agriculture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Agriculture "
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:background="@drawable/login_background"
+        app:layout_constraintEnd_toStartOf="@+id/btn_irrigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_irrigation" />
+
+    <Button
+        android:id="@+id/btn_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Do Activity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/bottom_nav"
+        android:background="@color/bottom_nav2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location_text" />
+
+    <Button
+        android:id="@+id/btn_irrigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=" Irrigation "
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/green"
+        android:background="@drawable/login_background"
+        app:layout_constraintEnd_toEndOf="@+id/btn_activity"
+        app:layout_constraintStart_toStartOf="@+id/btn_activity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_activity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
